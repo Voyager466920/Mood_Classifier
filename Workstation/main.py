@@ -118,7 +118,7 @@ model.compile(
 )
 
 # 6) 훈련
-model.fit(train_tf, validation_data=val_tf, epochs=10)
+model.fit(train_tf, validation_data=val_tf, epochs=4)
 
 # 7) TFLite 변환
 converter = tf.lite.TFLiteConverter.from_keras_model(model)
